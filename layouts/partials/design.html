@@ -1,4 +1,16 @@
 <!-- Design -->
+<div id="languagepicker">
+  <ul>
+    {{ range $.Site.Home.AllTranslations }}
+    <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+    {{ end }}
+  </ul>
+</div>
 <footer id="footer">
-    <p class="copyright">Design: <a href="https://github.com/d-asnaghi" target="_blank">d-asnaghi</a> and <a href="https://html5up.net" target="_blank">HTML5 UP</a>. Font/Icons: <a href="https://fontawesome.com" target="_blank">fontawesome</a>.</p>
+  <p class="copyright">
+    Design:
+    <a href="https://github.com/d-asnaghi" target="_blank">d-asnaghi</a> and
+    <a href="https://html5up.net" target="_blank">HTML5 UP</a>. Font/Icons:
+    <a href="https://fontawesome.com" target="_blank">fontawesome</a>.
+  </p>
 </footer>
